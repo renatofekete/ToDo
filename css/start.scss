@@ -1,0 +1,15 @@
+// mixins 
+
+@mixin btn($color) {
+  background:  darken($color, 20%);
+  &:hover {
+    background: $color;
+  }
+}
+
+// variables
+$main-color: #eaeaea;
+$danger-color: #FA9581;
+$safe-color: #8BACBD;
+
+$main-font: black;

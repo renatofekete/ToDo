@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+:root {
+  font-size: 16px; }
+
+textarea,
+button {
+  outline: none; }
+
+button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  border: none;
+  color: #eaeaea;
+  cursor: pointer; }
+  button:active {
+    padding: 8px 20px;
+    position: relative;
+    top: 4px; }
+
+ul {
+  list-style-type: none;
+  margin-bottom: 10px; }
+  ul li {
+    margin-bottom: 10px;
+    padding: 0 20px;
+    border-left: 3px solid #8BACBD;
+    position: relative; }
+    ul li .close_btn_box {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      cursor: pointer; }
+      ul li .close_btn_box .close_btn {
+        width: 100%;
+        height: 3px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        ul li .close_btn_box .close_btn::before, ul li .close_btn_box .close_btn::after {
+          content: '';
+          width: 100%;
+          height: 3px;
+          background: #FA9581;
+          position: absolute; }
+        ul li .close_btn_box .close_btn::before {
+          transform: rotate(45deg); }
+        ul li .close_btn_box .close_btn::after {
+          transform: rotate(-45deg); }
+
+#submit {
+  background: #527b90; }
+  #submit:hover {
+    background: #8BACBD; }
+
+#clear {
+  background: #f6421f; }
+  #clear:hover {
+    background: #FA9581; }
+
+.app {
+  display: flex; }
+  .app .form,
+  .app .todo_list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; }
+  .app .form {
+    width: 30%; }
+    .app .form textarea {
+      resize: none;
+      margin-bottom: 20px;
+      border: 1px solid #8BACBD; }
+  .app .todo_list {
+    width: 70%; }
+
+/*# sourceMappingURL=main.css.map */

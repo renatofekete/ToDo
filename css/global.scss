@@ -1,0 +1,83 @@
+textarea,
+button {
+  outline: none;
+}
+
+button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  border: none;
+  color: $main-color;
+  cursor: pointer;
+  &:active {
+    padding: 8px 20px;
+    position: relative;
+    top: 4px;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 10px;
+  li {
+    margin-bottom: 10px;
+    padding: 0 20px;
+    border-left: 3px solid $safe-color;
+    position: relative;
+    .close_btn_box {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+      .close_btn {
+        width: 100%;
+        height: 3px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &::before, &::after {
+          content: '';
+          width: 100%;
+          height: 3px;
+          background:$danger-color;
+          position: absolute;
+        }
+        &::before {
+          transform: rotate(45deg);
+        }
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+#submit {
+  @include btn($safe-color);
+}
+#clear {
+  @include btn($danger-color);
+}
+.app {
+  display: flex;
+  .form,
+  .todo_list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .form {
+    width: 30%;
+    textarea {
+      resize: none;
+      margin-bottom: 20px;
+      border: 1px solid $safe-color;
+    }
+  }
+  .todo_list {
+    width: 70%;
+  }
+}

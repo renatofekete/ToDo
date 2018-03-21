@@ -22,7 +22,8 @@ button {
   button:active {
     padding: 8px 20px;
     position: relative;
-    top: 4px; }
+    top: 4px;
+    margin-bottom: 4px; }
 
 ul {
   list-style-type: none;

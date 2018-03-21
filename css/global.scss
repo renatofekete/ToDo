@@ -9,6 +9,7 @@ button {
   border: none;
   color: $main-color;
   cursor: pointer;
+  font-family: 'Indie Flower', cursive;
   &:active {
     padding: 8px 20px;
     position: relative;
@@ -63,21 +64,34 @@ ul {
 }
 .app {
   display: flex;
+  width: 960px;
+  margin: 0 auto;
+  flex-direction: column;
   .form,
   .todo_list {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    width: 100%;
+    h1 {
+      align-self: center;
+      padding: 0px 10px;
+      border-left: 3px solid $danger-color;
+      border-top: 3px solid $danger-color;
+      border-right: 3px solid $safe-color;
+      border-bottom: 3px solid $safe-color;
+    }
   }
   .form {
-    width: 30%;
+    
     textarea {
       resize: none;
       margin-bottom: 20px;
       border: 1px solid $safe-color;
+      font-family: 'Indie Flower', cursive;
+      padding: 10px;
+      font-size: 20px;
     }
   }
-  .todo_list {
-    width: 70%;
-  }
+  
 }

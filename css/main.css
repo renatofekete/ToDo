@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
 :root {
-  font-size: 16px; }
+  font-size: 18px;
+  font-family: 'Indie Flower', cursive; }
 
 textarea,
 button {
@@ -15,7 +17,8 @@ button {
   padding: 10px 20px;
   border: none;
   color: #eaeaea;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: 'Indie Flower', cursive; }
   button:active {
     padding: 8px 20px;
     position: relative;
@@ -65,19 +68,30 @@ ul {
     background: #FA9581; }
 
 .app {
-  display: flex; }
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+  flex-direction: column; }
   .app .form,
   .app .todo_list {
     display: flex;
     flex-direction: column;
-    padding: 20px; }
-  .app .form {
-    width: 30%; }
-    .app .form textarea {
-      resize: none;
-      margin-bottom: 20px;
-      border: 1px solid #8BACBD; }
-  .app .todo_list {
-    width: 70%; }
+    padding: 20px;
+    width: 100%; }
+    .app .form h1,
+    .app .todo_list h1 {
+      align-self: center;
+      padding: 0px 10px;
+      border-left: 3px solid #FA9581;
+      border-top: 3px solid #FA9581;
+      border-right: 3px solid #8BACBD;
+      border-bottom: 3px solid #8BACBD; }
+  .app .form textarea {
+    resize: none;
+    margin-bottom: 20px;
+    border: 1px solid #8BACBD;
+    font-family: 'Indie Flower', cursive;
+    padding: 10px;
+    font-size: 20px; }
 
 /*# sourceMappingURL=main.css.map */
